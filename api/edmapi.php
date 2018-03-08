@@ -1,10 +1,10 @@
 <?php
 
 $host = "localhost";
-$username = "root";
-$password = "085040151";
-$db = "dve";
-$link = mysqli_connect("localhost", "root", "0850400151", "dve");
+$username = "";
+$password = "";
+$db = "";
+$link = mysqli_connect("localhost", "", "", "");
 header("Content-Type: application/json; charset=UTF-8");
 /* @var $id type */
 $IDASD = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_ENCODED);
