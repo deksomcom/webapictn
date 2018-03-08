@@ -1,7 +1,7 @@
 <?php
 	header("Content-Type: application/json; charset=UTF-8");
 	$gettoken = $_GET["token"];
-    $objConnect = mysql_connect("localhost","root","0850400151");
+    $objConnect = mysql_connect("","","");
 	$objDB = mysql_select_db("dve");
     $strSQL = "SELECT * FROM tb_member WHERE AccessToken = '$gettoken'";
 	$objQuery = mysql_query($strSQL);
