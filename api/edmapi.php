@@ -8,7 +8,7 @@ $link = mysqli_connect("localhost", "", "", "");
 header("Content-Type: application/json; charset=UTF-8");
 /* @var $id type */
 $IDASD = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_ENCODED);
-$objConnect = mysql_connect("localhost", "root", "0850400151");
+$objConnect = mysql_connect("localhost", "", "");
 $objDB = mysql_select_db("dve");
 $query = "SELECT * FROM tb_member WHERE dep_id = '$IDASD'";
 if ($IDASD == "") {
